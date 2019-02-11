@@ -1,8 +1,6 @@
 const express = require('express')
-const router = express.router
-const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
-const { Note } = require('./noteModel')
+const Note = require('./noteModel')
 
 module.exports = {
 
@@ -10,6 +8,7 @@ module.exports = {
         Note.find()
         .then((notes) => {
             res.json(notes)
+            console.log(notes)
           })
           .catch((err) => {
             console.log()
@@ -17,3 +16,4 @@ module.exports = {
     }
 
 }
+
