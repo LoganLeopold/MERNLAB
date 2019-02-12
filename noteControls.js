@@ -24,6 +24,13 @@ module.exports = {
         console.log('deletion successful')
         res.redirect('/')
       })
+    },
+
+    create: (req,res) => {
+      Note.create({
+        title: req.body.data.name,
+        content: req.body.data.content
+      })
     }
 
 }

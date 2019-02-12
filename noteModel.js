@@ -18,6 +18,6 @@ module.exports = mongoose.model('Note', Note)
 
 
 
-// "title" : "Monday",
-// "content" : "You need to think about an application."
+"title" : "Monday",
+"content" : "You need to think about an application."
 
