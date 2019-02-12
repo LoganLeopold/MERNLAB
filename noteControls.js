@@ -13,6 +13,17 @@ module.exports = {
           .catch((err) => {
             console.log()
           })
+    },
+
+    delete: (req,res) => {
+      console.log(req.params)
+      Note.findOneAndDelete(
+        {_id: req.params.id}
+      )
+      .then ((deletion) => {
+        console.log('deletion successful')
+        res.redirect('/')
+      })
     }
 
 }

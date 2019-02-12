@@ -10,3 +10,14 @@ const Note = new Schema({
 
 module.exports = mongoose.model('Note', Note)
 
+
+
+
+
+
+
+
+
+// "title" : "Monday",
+// "content" : "You need to think about an application."
+

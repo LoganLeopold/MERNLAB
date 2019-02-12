@@ -1,7 +1,11 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
-const noteControls = require('./noteControls')
+const cors = require('cors')
+const methodOverride = require('method-override');
+
+
+app.use(cors())
 
 app.use(bodyParser.urlencoded({extended: true}))
 
